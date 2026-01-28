@@ -19,7 +19,4 @@ int main (void){
 		std::cout << "element not found" << std::endl;
 	else
 		std::cout << *pos << std::endl;
-	std::cout << &(*pos) << std::endl;
-	std::cout << &list1 << std::endl;
-
 }
