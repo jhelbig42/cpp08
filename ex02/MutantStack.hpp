@@ -1,6 +1,6 @@
 #pragma once
 
-# include <stack>
+#include <stack>
 
 template<typename T>
 class MutantStack : public std::stack<T>{
@@ -12,13 +12,9 @@ class MutantStack : public std::stack<T>{
 
 		typedef typename std::stack<T>::container_type::iterator iterator;
 		
-		iterator begin(){
-			return (this->c.begin());
-		}
+		iterator begin();
 		
-		iterator end(){
-			return (this->c.end());
-		}
+		iterator end();
 };
 
-# include "MutantStack.tpp"
+#include "MutantStack.tpp"
